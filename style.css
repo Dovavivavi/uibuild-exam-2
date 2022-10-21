@@ -28,6 +28,9 @@
 
 .card {
   background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-bottom: 1rem;
   padding: 2.5rem;
   max-width: 300px;
@@ -36,6 +39,7 @@
   height: 34.375;
   color: var(--blue);
   font-size: 1.125rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .title {
