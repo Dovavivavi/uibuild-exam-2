@@ -7,16 +7,15 @@ const baseHtml = function() {
       <p>MEANINGFUL MOVIES</p>
       <div>logo</div>
     </div>
-    <div class="card-container"></div>
+    <div class=cards></div>
   `
 };
 
 const root = document.querySelector('#root');
 root.insertAdjacentHTML('beforeend', baseHtml());
+const card = document.querySelector('.cards')
 
-const cardContainer = document.querySelector('.card-container');
-
-cardContainer.innerHTML = movies.cards.map(movie => /*html*/ `
+card.innerHTML = movies.cards.map(movie => /*html*/ `
   <div class="card">
     <div class="text-container">
       <h1 class="title">${movie.title}</h1>
@@ -24,7 +23,7 @@ cardContainer.innerHTML = movies.cards.map(movie => /*html*/ `
       <p class="text">${movie.text}</p>
     </div>
     <div class="button-container">
-      <button>Watch</button>
+      <button class="button">Watch</button>
     </div>
   </div>
 `).join('');

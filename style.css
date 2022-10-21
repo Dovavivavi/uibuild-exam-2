@@ -19,15 +19,23 @@
 };
 
 .card-container {
-  background-color: aqua;
-  max-width: 1000px;
+  background-color: var(--yellow);
+}
+
+.cards {
+  background-color: var(--blue);
 }
 
 .card {
   background-color: var(--yellow);
-  border: 3px solid black;
-  max-width: 200px;
-  max-height: 500px;
+  margin-bottom: 1rem;
+  padding: 2.5rem;
+  max-width: 300px;
+  width: 18.75rem;
+  max-height: 550px;
+  height: 34.375;
+  color: var(--blue);
+  font-size: 1.125rem;
 }
 
 .title {
@@ -35,12 +43,17 @@
   font-size: 2.25rem;
 };
 
-.sub {
-  color: var(--blue);
-  font-size: 1.125rem;
-};
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--blue);
+  width: 50px;
+}
 
-.text {
-  color: var(--blue);
-  font-size: 1.125rem;
-};
+.button {
+  background-color: var(--blue);
+  border: 2px solid var(--yellow);
+  width: 50px;
+}
